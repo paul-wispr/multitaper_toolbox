@@ -5,10 +5,10 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="multitaper_toolbox",
-    version="26_JUL_2023",
+    version="1.0.0",
     author="Thomas Possidente",
     author_email="tpossidente@bwh.harvard.edu",
-    description="implementations of the multitaper spectrogram analysis",
+    description="Implementations of the multitaper spectrogram analysis, forked on 26 July 2023",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/paul-wispr/multitaper_toolbox",
