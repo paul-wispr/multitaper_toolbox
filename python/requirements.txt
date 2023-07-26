@@ -1,4 +1,0 @@
-joblib
-matplotlib
-numpy
-scipy
