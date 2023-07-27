@@ -16,7 +16,8 @@ import matplotlib.pyplot as plt
 def multitaper_spectrogram(data, fs, frequency_range=None, time_bandwidth=5, num_tapers=None, window_params=None,
                            min_nfft=0, detrend_opt='linear', multiprocess=False, n_jobs=None, weighting='unity',
                            plot_on=True, return_fig=False, clim_scale=True, verbose=True, xyflip=False):
-    """ Compute multitaper spectrogram of timeseries data
+    """
+    Compute multitaper spectrogram of timeseries data
     Usage:
     mt_spectrogram, stimes, sfreqs = multitaper_spectrogram(data, fs, frequency_range=None, time_bandwidth=5,
                                                             num_tapers=None, window_params=None, min_nfft=0,

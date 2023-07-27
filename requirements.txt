@@ -4,3 +4,4 @@ scipy
 joblib
 colorcet
 pandas
+multitaper_toolbox
