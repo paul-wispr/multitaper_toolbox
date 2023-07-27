@@ -15,7 +15,7 @@ import matplotlib.pyplot as plt
 # MULTITAPER SPECTROGRAM #
 def multitaper_spectrogram(data, fs, frequency_range=None, time_bandwidth=5, num_tapers=None, window_params=None,
                            min_nfft=0, detrend_opt='linear', multiprocess=False, n_jobs=None, weighting='unity',
-                           plot_on=True, return_fig=False, clim_scale=True, verbose=True, xyflip=False):
+                           plot_on=True, return_fig=False, clim_scale=True, verbose=True, xyflip=False, colormap='cet_rainbow4'):
     """
     Compute multitaper spectrogram of timeseries data
     Usage:
@@ -186,7 +186,7 @@ def multitaper_spectrogram(data, fs, frequency_range=None, time_bandwidth=5, num
         fig.colorbar(im, ax=ax, label='PSD (dB)', shrink=0.8)
         ax.set_xlabel("Time (HH:MM:SS)")
         ax.set_ylabel("Frequency (Hz)")
-        im.set_cmap(plt.cm.get_cmap('cet_rainbow4'))
+        im.set_cmap(plt.cm.get_cmap(colormap))
         ax.invert_yaxis()
 
         # Scale colormap
